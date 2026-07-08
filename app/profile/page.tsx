@@ -25,8 +25,8 @@ export default function ProfilePage() {
       <h1>Profile</h1>
       <p>Logged in as: <strong>{email}</strong></p>
       <button onClick={handleLogout} style={{ padding: '8px 16px', cursor: 'pointer' }}>Log out</button>
-      <button onClick={() => {}} style={{ padding: '8px 16px', cursor: 'pointer' }}>Feed</button>
-      <button onClick={() => {}} style={{ padding: '8px 16px', cursor: 'pointer' }}>Post</button>
+      <button onClick={() => {router.push('/feed')}} style={{ padding: '8px 16px', cursor: 'pointer' }}>Feed</button>
+      <button onClick={() => {router.push('/post')}} style={{ padding: '8px 16px', cursor: 'pointer' }}>Post</button>
     </div>
   )
 }
